@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "name": "Adult Huhn & Reis",
+    "brand": "Naturpfote",
+    "animal": "Hund",
+    "category": "Trockenfutter",
+    "size": "12 kg",
+    "color": "Salbei",
+    "description": "Adult Huhn & Reis von Naturpfote: eine durchdachte Wahl für deinen Liebling. Vergleiche Angebote für dieselbe Packungsgröße und finde den passenden Preis. Alle Angaben und Angebote sind illustrative Beispieldaten.",
+    "features": [
+      "Mit 65 % tierischem Protein",
+      "Ohne künstliche Farb- und Aromastoffe",
+      "Für ausgewachsene Hunde"
+    ],
+    "offers": [
+      {
+        "shop": "Pfotenmarkt",
+        "price": 3299,
+        "shipping": 499,
+        "delivery": "2–4 Werktage"
+      },
+      {
+        "shop": "Tierliebe",
+        "price": 3509,
+        "shipping": 0,
+        "delivery": "2–4 Werktage"
+      },
+      {
+        "shop": "Futterfreunde",
+        "price": 3789,
+        "shipping": 299,
+        "delivery": "2–4 Werktage"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Wild Duck Adult",
+    "brand": "Wolfsblut",
+    "animal": "Hund",
+    "category": "Trockenfutter",
+    "size": "12,5 kg",
+    "color": "Sand",
+    "description": "Wild Duck Adult von Wolfsblut: eine durchdachte Wahl für deinen Liebling. Vergleiche Angebote für dieselbe Packungsgröße und finde den passenden Preis. Alle Angaben und Angebote sind illustrative Beispieldaten.",
+    "features": [
+      "Ente mit Süßkartoffel",
+      "Getreidefreie Rezeptur",
+      "Für ausgewachsene Hunde"
+    ],
+    "offers": [
+      {
+        "shop": "Pfotenmarkt",
+        "price": 5499,
+        "shipping": 499,
+        "delivery": "2–4 Werktage"
+      },
+      {
+        "shop": "Tierliebe",
+        "price": 5709,
+        "shipping": 0,
+        "delivery": "2–4 Werktage"
+      },
+      {
+        "shop": "Futterfreunde",
+        "price": 5989,
+        "shipping": 299,
+        "delivery": "2–4 Werktage"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Indoor Geflügel",
+    "brand": "Sanabelle",
+    "animal": "Katze",
+    "category": "Trockenfutter",
+    "size": "2 kg",
+    "color": "Lavendel",
+    "description": "Indoor Geflügel von Sanabelle: eine durchdachte Wahl für deinen Liebling. Vergleiche Angebote für dieselbe Packungsgröße und finde den passenden Preis. Alle Angaben und Angebote sind illustrative Beispieldaten.",
+    "features": [
+      "Für Wohnungskatzen",
+      "Mit Geflügel",
+      "Schonend zubereitet"
+    ],
+    "offers": [
+      {
+        "shop": "Pfotenmarkt",
+        "price": 1699,
+        "shipping": 499,
+        "delivery": "2–4 Werktage"
+      },
+      {
+        "shop": "Tierliebe",
+        "price": 1909,
+        "shipping": 0,
+        "delivery": "2–4 Werktage"
+      },
+      {
+        "shop": "Futterfreunde",
+        "price": 2189,
+        "shipping": 299,
+        "delivery": "2–4 Werktage"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Sensitive Lachs",
+    "brand": "Josera",
+    "animal": "Hund",
+    "category": "Trockenfutter",
+    "size": "12,5 kg",
+    "color": "Rosé",
+    "description": "Sensitive Lachs von Josera: eine durchdachte Wahl für deinen Liebling. Vergleiche Angebote für dieselbe Packungsgröße und finde den passenden Preis. Alle Angaben und Angebote sind illustrative Beispieldaten.",
+    "features": [
+      "Mit Lachs und Kartoffel",
+      "Für sensible Hunde",
+      "Ohne Weizen"
+    ],
+    "offers": [
+      {
+        "shop": "Pfotenmarkt",
+        "price": 4599,
+        "shipping": 499,
+        "delivery": "2–4 Werktage"
+      },
+      {
+        "shop": "Tierliebe",
+        "price": 4809,
+        "shipping": 0,
+        "delivery": "2–4 Werktage"
+      },
+      {
+        "shop": "Futterfreunde",
+        "price": 5089,
+        "shipping": 299,
+        "delivery": "2–4 Werktage"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Feine Filets Huhn",
+    "brand": "Miamor",
+    "animal": "Katze",
+    "category": "Nassfutter",
+    "size": "12 × 100 g",
+    "color": "Salbei",
+    "description": "Feine Filets Huhn von Miamor: eine durchdachte Wahl für deinen Liebling. Vergleiche Angebote für dieselbe Packungsgröße und finde den passenden Preis. Alle Angaben und Angebote sind illustrative Beispieldaten.",
+    "features": [
+      "Zarte Hühnerfilets",
+      "Ergänzungsfuttermittel",
+      "Praktische Portionsschalen"
+    ],
+    "offers": [
+      {
+        "shop": "Pfotenmarkt",
+        "price": 1299,
+        "shipping": 499,
+        "delivery": "2–4 Werktage"
+      },
+      {
+        "shop": "Tierliebe",
+        "price": 1509,
+        "shipping": 0,
+        "delivery": "2–4 Werktage"
+      },
+      {
+        "shop": "Futterfreunde",
+        "price": 1789,
+        "shipping": 299,
+        "delivery": "2–4 Werktage"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Wiesenheu Natur",
+    "brand": "Bunny Nature",
+    "animal": "Kleintier",
+    "category": "Heu & Snacks",
+    "size": "3 kg",
+    "color": "Sand",
+    "description": "Wiesenheu Natur von Bunny Nature: eine durchdachte Wahl für deinen Liebling. Vergleiche Angebote für dieselbe Packungsgröße und finde den passenden Preis. Alle Angaben und Angebote sind illustrative Beispieldaten.",
+    "features": [
+      "Aromatische Wiesengräser",
+      "Hoher Rohfaseranteil",
+      "Für Kaninchen und Meerschweinchen"
+    ],
+    "offers": [
+      {
+        "shop": "Pfotenmarkt",
+        "price": 1199,
+        "shipping": 499,
+        "delivery": "2–4 Werktage"
+      },
+      {
+        "shop": "Tierliebe",
+        "price": 1409,
+        "shipping": 0,
+        "delivery": "2–4 Werktage"
+      },
+      {
+        "shop": "Futterfreunde",
+        "price": 1689,
+        "shipping": 299,
+        "delivery": "2–4 Werktage"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Lieblingsplatz Cozy",
+    "brand": "Petlando",
+    "animal": "Hund",
+    "category": "Zubehör",
+    "size": "80 × 60 cm",
+    "color": "Lavendel",
+    "description": "Lieblingsplatz Cozy von Petlando: eine durchdachte Wahl für deinen Liebling. Vergleiche Angebote für dieselbe Packungsgröße und finde den passenden Preis. Alle Angaben und Angebote sind illustrative Beispieldaten.",
+    "features": [
+      "Abnehmbarer Bezug",
+      "Rutschfeste Unterseite",
+      "Waschbar bei 30 °C"
+    ],
+    "offers": [
+      {
+        "shop": "Pfotenmarkt",
+        "price": 3999,
+        "shipping": 499,
+        "delivery": "2–4 Werktage"
+      },
+      {
+        "shop": "Tierliebe",
+        "price": 4209,
+        "shipping": 0,
+        "delivery": "2–4 Werktage"
+      },
+      {
+        "shop": "Futterfreunde",
+        "price": 4489,
+        "shipping": 299,
+        "delivery": "2–4 Werktage"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Katzenspielzeug Feder",
+    "brand": "Trixie",
+    "animal": "Katze",
+    "category": "Zubehör",
+    "size": "1 Stück",
+    "color": "Rosé",
+    "description": "Katzenspielzeug Feder von Trixie: eine durchdachte Wahl für deinen Liebling. Vergleiche Angebote für dieselbe Packungsgröße und finde den passenden Preis. Alle Angaben und Angebote sind illustrative Beispieldaten.",
+    "features": [
+      "Für gemeinsames Spielen",
+      "Mit natürlicher Feder",
+      "Leichter Holzstab"
+    ],
+    "offers": [
+      {
+        "shop": "Pfotenmarkt",
+        "price": 499,
+        "shipping": 499,
+        "delivery": "2–4 Werktage"
+      },
+      {
+        "shop": "Tierliebe",
+        "price": 709,
+        "shipping": 0,
+        "delivery": "2–4 Werktage"
+      },
+      {
+        "shop": "Futterfreunde",
+        "price": 989,
+        "shipping": 299,
+        "delivery": "2–4 Werktage"
+      }
+    ]
+  }
+]
