@@ -1,0 +1,13 @@
+services:
+  _defaults: { autowire: true, autoconfigure: true }
+  App\Presentation\:
+    resource: "../src/Presentation/"
+  App\Logic\Catalog: ~
+  App\Data\DoctrineProductRepository: ~
+  App\Domain\ProductRepository: '@App\Data\DoctrineProductRepository'
+  Doctrine\ORM\EntityManagerInterface:
+    factory: ['App\Data\Database', "connect"]
+    arguments: ["%kernel.project_dir%/var/data/catalog.sqlite"]
+  App\Data\DemoCatalogInitializer: ~
+  App\Logic\InitializeCatalog: ~
+  App\Domain\CatalogInitializer: '@App\Data\DemoCatalogInitializer'
