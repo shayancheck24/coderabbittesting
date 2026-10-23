@@ -5,6 +5,18 @@ use App\Domain\Product;
 final readonly class Catalog
 {
     public function __construct(private ProductRepository $products) {}
+    /**
+     * Return matching product fields, including lowestPrice in EUR cents excluding shipping.
+     * Filters combine: query is a case-insensitive substring of the combined name and brand,
+     * while animal and category require exact matches. Empty strings disable each filter;
+     * query whitespace is preserved.
+     * Repository and product conversion errors propagate to the caller.
+     *
+     * @param string $sort 'price-desc' sorts by descending lowestPrice; 'name' uses
+     *     case-insensitive natural name order; all other values sort by ascending lowestPrice.
+     * @return list<array> An empty list when no products match.
+     * @throws \ValueError If a matching product has no offer price.
+     */
     public function search(string $query = '', string $animal = '', string $category = '', string $sort = 'price-asc'): array
     {
         $items = array_filter($this->products->all(), static fn(Product $p) =>
@@ -18,5 +30,11 @@ final readonly class Catalog
         });
         return array_map(static fn(Product $p) => $p->toArray(), $items);
     }
+    /**
+     * Return product fields with lowestPrice in EUR cents excluding shipping, or null if absent.
+     * Repository and product conversion errors propagate.
+     *
+     * @throws \ValueError If the product has no offer price.
+     */
     public function detail(int $id): ?array { return $this->products->find($id)?->toArray(); }
 }

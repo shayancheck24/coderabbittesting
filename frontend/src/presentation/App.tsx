@@ -26,6 +26,7 @@ import {
 import { useCatalog } from "../logic/useCatalog";
 import { money, type Product } from "../domain/product";
 
+/** Render an illustrative product package, with large selecting the detail-page size. */
 function ProductArt({
   product,
   large = false,
@@ -56,6 +57,7 @@ function ProductArt({
     </div>
   );
 }
+/** Render the site branding and navigation to the catalog and comparison explanation. */
 function Header() {
   return (
     <>
@@ -82,6 +84,7 @@ function Header() {
     </>
   );
 }
+/** Render the comparison explanation and demo catalog disclaimer. */
 function Footer() {
   return (
     <footer id="so-funktionierts">
@@ -99,6 +102,7 @@ function Footer() {
     </footer>
   );
 }
+/** Show loading text, or the supplied error with a button that invokes retry. */
 function Status({
   loading,
   error,
@@ -122,6 +126,7 @@ function Status({
     </div>
   );
 }
+/** Render the searchable catalog with filters and sorting stored in URL query parameters. */
 function Listing() {
   const [params, setParams] = useSearchParams();
   const [query, setQuery] = useState(params.get("q") ?? "");
@@ -129,6 +134,7 @@ function Listing() {
     setQuery(params.get("q") ?? "");
   }, [params]);
   const { items, loading, error, retry } = useCatalog(params.toString());
+  /** Set a URL query parameter, or remove it for an empty value, preserving other parameters. */
   const change = (key: string, value: string) => {
     const next = new URLSearchParams(params);
     if (value) next.set(key, value);
@@ -348,6 +354,11 @@ function Listing() {
     </>
   );
 }
+/**
+ * Load the route's product and show offers by total price including shipping.
+ * Preserve query parameters in the back link; selecting an offer shows a demo notice.
+ * Scroll to the top and clear the selected shop when the route ID changes.
+ */
 function Detail() {
   const { id } = useParams();
   const location = useLocation();
@@ -481,6 +492,7 @@ function Detail() {
     </section>
   );
 }
+/** Render shared layout and catalog/detail routes, with a fallback for unmatched paths. */
 export default function App() {
   return (
     <>

@@ -7,6 +7,11 @@ use Symfony\Component\Routing\Attribute\Route;
 final readonly class CatalogController
 {
     public function __construct(private Catalog $catalog) {}
+    /**
+     * Return matching products in an items envelope, trimming the q filter.
+     * Return HTTP 400 for array-valued filters or unsupported sort values.
+     * Catalog failures propagate to Symfony's error handling.
+     */
     #[Route('/api/products', methods: ['GET'])]
     public function list(Request $request): JsonResponse
     {
@@ -17,12 +22,14 @@ final readonly class CatalogController
         if (!in_array($sort, ['price-asc', 'price-desc', 'name'], true)) return new JsonResponse(['error' => 'Ungültige Sortierung.'], 400);
         return new JsonResponse(['items' => $this->catalog->search(trim($request->query->get('q', '')), $request->query->get('animal', ''), $request->query->get('category', ''), $sort)]);
     }
+    /** Return the product as JSON or HTTP 404 if absent; catalog failures propagate. */
     #[Route('/api/products/{id}', requirements: ['id' => '\d+'], methods: ['GET'])]
     public function detail(int $id): JsonResponse
     {
         $item = $this->catalog->detail($id);
         return new JsonResponse($item ?? ['error' => 'Produkt nicht gefunden.'], $item ? 200 : 404);
     }
+    /** Return status ok after a catalog search succeeds; catalog failures propagate. */
     #[Route('/api/health', methods: ['GET'])]
     public function health(): JsonResponse { $this->catalog->search(); return new JsonResponse(['status' => 'ok']); }
 }

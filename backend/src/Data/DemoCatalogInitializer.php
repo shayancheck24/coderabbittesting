@@ -5,6 +5,12 @@ use Doctrine\ORM\Tools\SchemaTool;
 final readonly class DemoCatalogInitializer implements \App\Domain\CatalogInitializer
 {
     public function __construct(private EntityManagerInterface $em) {}
+    /**
+     * Create and seed the products table only if it does not exist; leave even an empty existing table untouched.
+     * Failures within the transaction trigger a rollback; database and fixture errors propagate.
+     *
+     * @throws \JsonException If the fixture JSON cannot be decoded.
+     */
     public function initialize(): void
     {
         $connection = $this->em->getConnection();

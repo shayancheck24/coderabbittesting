@@ -17,6 +17,7 @@ export interface Product {
   offers: Offer[];
   lowestPrice: number;
 }
+/** Format EUR cents as a German currency string, including negative amounts. */
 export const money = (cents: number) =>
   new Intl.NumberFormat("de-DE", { style: "currency", currency: "EUR" }).format(
     cents / 100,

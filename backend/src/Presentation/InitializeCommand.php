@@ -9,6 +9,10 @@ use Symfony\Component\Console\Output\OutputInterface;
 final class InitializeCommand extends Command
 {
     public function __construct(private InitializeCatalog $initializer) { parent::__construct(); }
+    /**
+     * Initialize the demo catalog, write a readiness message, and return Command::SUCCESS.
+     * Initialization and output errors propagate to the console application.
+     */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $this->initializer->run();

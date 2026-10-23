@@ -1,6 +1,13 @@
 import { useEffect, useState } from "react";
 import { catalog } from "../data/catalog";
 import type { Product } from "../domain/product";
+/**
+ * Load catalog items, or a single product wrapped in an array for a nonempty id.
+ * query is a serialized query string without '?', used only for list requests.
+ * Return items, loading/error state, and a callback that retries the request.
+ * Clear stale items while loading; request failures become error text with empty items.
+ * Abort requests on dependency changes or unmount, ignoring aborted results and errors.
+ */
 export function useCatalog(query: string, id?: string) {
   const [state, setState] = useState<{
     key: string;
